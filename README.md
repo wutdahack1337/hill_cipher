@@ -3,7 +3,7 @@ Hill cipher và cách giải mã cho học sinh cấp 2
 
 Hôm nay t tìm hiểu về Hill cipher và đây là cách nó hoạt động: 
 - Chọn một khóa K, với K là một [ma trận](vi.wikipedia.org/wiki/Ma_trận_(toán_học)#Định_nghĩa) m * m (chọn làm sao cho: m là ước của độ dài plaintext, nếu khó tìm m thì thêm những kí tự vô nghĩa ở cuối && K là [ma trận khả nghịch](vi.wikipedia.org/wiki/Ma_trận_khả_nghịch) - nói đơn giản là chọn làm sao cho K tồn tại ma trận nghịch đảo)
-- Chia plaintext thành những ma trận size 1 * m - tạm gọi chung là E
+- Chia plaintext thành những ma trận size 1 * m (lý do để m là ước) - tạm gọi chung là E
 - Mã hóa: E(1 * m) * K(m * m) = D(1 * m)
 - Giải mã: E = D * K^(-1) ([cách tìm](vi.wikipedia.org/wiki/Ma_trận_khả_nghịch#Tìm_ma_trận_nghịch_đảo) ma trận nghịch đảo K (K^-1))
 
